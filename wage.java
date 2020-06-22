@@ -44,15 +44,28 @@ public class wage
 	else
 	{
 	System.out.println("Data provided wrong");
-	}}
+	}
+	}
+
+
+	Random rand1 = new Random();
+	int attain = rand.nextInt(20);
+	System.out.println("Attandance 2: "+attain);
+	System.out.println("Monthly wage limiting to 20 days: Rs."+(wph*fdh)*attain);
+	
+	int z = ((wph*fdh)*attain);
+	int th=100;
+	int y = ((wph*fdh)/fdh*th);
 	
 
-
-
-	Random rand1 =new Random();
-	int attain = rand.nextInt(20);
-	System.out.println("Monthly wage limiting to 20 days: Rs."+(wph*fdh)*attain);
-
+	if(z<y)
+	{
+	System.out.println("Limited wage: Rs."+z);
+	}
+	else
+	{
+	System.out.println("Limited Wage: Rs."+y);
+	}
 	}
 
 }
