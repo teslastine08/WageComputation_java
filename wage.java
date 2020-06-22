@@ -35,20 +35,27 @@ public class wage
 
 	System.out.println("Enter part time Days: ");
         num = in.nextInt();
-
-	switch (num)
 	{
-	case 1:
 	if(num < 30)
+	{
 	System.out.println("Part time wage: Rs."+(num*parthr*wph));
-	break;
-
-	default:
-	System.out.println("Data provided wrong");
-	break;
-
 	}
+
+	else
+	{
+	System.out.println("Data provided wrong");
+	}}
+	
+
+
+
+	Random rand1 =new Random();
+	int attain = rand.nextInt(20);
+	System.out.println("Monthly wage limiting to 20 days: Rs."+(wph*fdh)*attain);
+
 	}
 
 }
+
+
 
