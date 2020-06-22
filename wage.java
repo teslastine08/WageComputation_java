@@ -15,26 +15,40 @@ public class wage
 
 	 System.out.println("Welcome to wage computation");
 
+
+
+
+
          Random rand = new Random();
 
          int attan = rand.nextInt(30);
 
          System.out.println("Attandance: "+attan);
 
+
+
 	 System.out.println("Daily employee wage: Rs."+(wph*fdh));
-	 
+
 	 System.out.println("Employee monthly wage: Rs."+((wph*fdh)*attan));
 
-	 System.out.println("Enter part time Days: ");
-	 num = in.nextInt();
-	 if (num < 30)
+
+
+	System.out.println("Enter part time Days: ");
+        num = in.nextInt();
+
+	switch (num)
 	{
-	 System.out.println("Parttime Wage: Rs."+((num*parthr*wph)));
-	}
-	else
-	{
-	 System.out.println("Data provided wrong");
+	case 1:
+	if(num < 30)
+	System.out.println("Part time wage: Rs."+(num*parthr*wph));
+	break;
+
+	default:
+	System.out.println("Data provided wrong");
+	break;
+
 	}
 	}
 
 }
+
